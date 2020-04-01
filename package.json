@@ -1,0 +1,26 @@
+{
+  "name": "nodesqlserver",
+  "version": "1.0.0",
+  "description": "API Node_SQLServer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanbernardelli/API_Product-List.git"
+  },
+  "keywords": [
+    "API_Product-List",
+    "SQLServer"
+  ],
+  "author": "Renan Bernardelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renanbernardelli/API_Product-List/issues"
+  },
+  "homepage": "https://github.com/renanbernardelli/API_Product-List#readme",
+  "dependencies": {
+    "mssql": "^6.2.0"
+  }
+}
