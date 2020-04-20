@@ -21,9 +21,15 @@ const router = express.Router();
 router.get('/', (req, res) => res.json({message: 'Funcionando!'}));
 app.use('/', router);
 
-router.get('/products', (req, res) => {
+//definir rota: buscar produtos ou produto/id
+router.get('/products/:id?', (req, res) => {
 
-    execSQLQuery('SELECT * FROM Products', res)
+    let filter = '';
+    if (req.params.id) {
+        
+        filter = ' WHERE ID=' + parseInt(req.params.id);
+    }
+    execSQLQuery('SELECT * FROM Products' + filter, res);
 });
 
 //iniciar servidor
